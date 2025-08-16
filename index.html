@@ -1,59 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shreya V Nadiger | Portfolio</title>
-  <link rel="stylesheet" href="./style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shreya's Pixel Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.cdnfonts.com/css/press-start-2p" rel="stylesheet">
 </head>
 <body>
+  <!-- Background Stars -->
+  <div class="stars"></div>
+
+  <!-- Navigation -->
   <header>
-    <div class="container">
-      <h1>Shreya V Nadiger</h1>
-      <p>Computer Science Student | MIT Mysore</p>
-    </div>
+    <nav>
+      <ul>
+        <li><a href="#" data-section="home">Home</a></li>
+        <li><a href="#" data-section="about">About</a></li>
+        <li><a href="#" data-section="skills">Skills</a></li>
+        <li><a href="#" data-section="projects">Projects</a></li>
+        <li><a href="#" data-section="contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section class="about">
-    <div class="container">
+  <!-- Sections -->
+  <main>
+    <!-- Home -->
+    <section id="home" class="section active">
+      <div class="left">
+        <h1><span>Shreya Nadiger</span></h1>
+        <p>Hi, a Computer Science student passionate about 
+        <span class="highlight">Web Development</span> & <span class="highlight">Creative Design</span>.</p>
+        <button class="btn" data-section="about">Explore More</button>
+      </div>
+      <div class="right">
+        <div class="pixel-card">
+          <img src="shreya_spirit.jpg" alt="Shreya Spirit">
+          <h2>Shreya</h2>
+          <div class="stats">
+            <div><span></span> Skills</div>
+            <div><span></span> Projects</div>
+            <div><span></span> contact</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section hidden">
       <h2>About Me</h2>
-      <p>I'm a B.E. Computer Science student at Maharaja Institute of Technology, Mysore. I'm passionate about coding, learning new technologies, and building meaningful projects.</p>
-    </div>
-  </section>
+      <p>
+        I’m Shreya, a BE CSE student from Mysore.  
+        I enjoy mixing tech and art to make some creative projects.
+        My goal is to grow as a full-stack developer while working on creative projects.
+      </p>
+    </section>
 
-  <section class="education">
-    <div class="container">
-      <h2>Education</h2>
-      <p><strong>B.E in Computer Science and Engineering</strong><br />
-      Maharaja Institute of Technology, Mysore<br />
-      2021 – 2025 (Expected)</p>
-    </div>
-  </section>
+    <!-- Skills -->
+    <section id="skills" class="section hidden">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Java</div>
+        <div class="skill-card">React.js</div>
+        <div class="skill-card">pixcel art</div>
+        <div class="skill-card">Git and Github</div>
+        <div class="skill-card">python</div>
+      </div>
+    </section>
 
-  <section class="projects">
-    <div class="container">
+    <!-- Projects -->
+    <section id="projects" class="section hidden">
       <h2>Projects</h2>
-      <ul>
-        <li><strong>Project Title 1</strong> – Short description of the project.</li>
-        <li><strong>Project Title 2</strong> – Short description of the project.</li>
-        <li><strong>Project Title 3</strong> – Short description of the project.</li>
-      </ul>
-    </div>
-  </section>
+      <div class="grid">
+        <div class="project-card">Portfolio Website</div>
+        <div class="project-card">Weather App</div>
+        <div class="project-card">E-commerce UI</div>
+      </div>
+    </section>
 
-  <section class="contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:shreya@example.com">shreya@example.com</a></p>
-      <p>LinkedIn: <a href="#">linkedin.com/in/shreya</a></p>
-      <p>GitHub: <a href="#">github.com/shreya</a></p>
-    </div>
-  </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Shreya V Nadiger. All rights reserved.</p>
-    </div>
-  </footer>
+    <!-- Contact -->
+<section id="contact" class="section hidden">
+  <h2>Contact Me</h2>
+  <p>Drop a message and let’s connect!</p>
+  <div class="socials">
+    <!-- Email -->
+    <a href="shreyavnadiger@gmail.com" title="Email">📧</a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/shreyanadiger/" target="_blank" title="LinkedIn">💼</a>
+
+    <!-- GitHub -->
+    <a href="https://github.com/Shreyanadiger" target="_blank" title="GitHub">🐱</a>
+  </div>
+</section>
+
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
